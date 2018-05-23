@@ -6,7 +6,7 @@
 // @match        https://www.zoox18.com/*
 // @downloadURL  https://raw.githubusercontent.com/u5545/userscripts/master/Zoox18-Free.user.js
 // @updateURL    https://raw.githubusercontent.com/u5545/userscripts/master/Zoox18-Free.user.js
-// @version      1.0
+// @version      1.0.1
 // @grant        none
 // @run-at       document-end
 // @noframes
@@ -89,11 +89,11 @@
     function createBtn(url, vis){
         var db = createEl("div", "pull-right m-t-15 m-l-5"), dbgr = createEl("div", "btn-group");
         var btn = createEl("a", "btn btn-info"), ic = createEl("i", "glyphicon glyphicon-download-alt");
-        var sp = document.createElement("span"), dt = document.createTextNode(" Save video");
+        var sp = document.createElement("span");
         ic.style = `border-image:url('/${altpath}/save.gif');`;
         btn.setAttribute("href", url || `/${altpath}/download/${video_id}?s`);
         btn.setAttribute("target", "_blank");
-        sp.appendChild(dt);
+        sp.innerHTML = "&nbsp;Save video<br><small>(right click &gt; save as)</small>";
         btn.appendChild(ic);
         btn.appendChild(sp);
         dbgr.appendChild(btn);

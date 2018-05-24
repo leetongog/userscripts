@@ -4,8 +4,8 @@
 // @author       u5545
 // @description  Unlocks private videos on ZooX18 and allows free download
 // @match        https://www.zoox18.com/*
-// @downloadURL  https://raw.githubusercontent.com/u5545/userscripts/master/Zoox18-Free.user.js
-// @updateURL    https://raw.githubusercontent.com/u5545/userscripts/master/Zoox18-Free.user.js
+// @downloadURL  https://raw.githubusercontent.com/u5545/userscripts/master/Zoox18Free.user.js
+// @updateURL    https://raw.githubusercontent.com/u5545/userscripts/master/Zoox18Free.user.js
 // @version      1.0.1
 // @grant        none
 // @run-at       document-end
